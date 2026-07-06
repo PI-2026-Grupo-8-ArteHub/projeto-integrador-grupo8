@@ -1,289 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Multiculturalismo | Respeito às Diferenças</title>
-
-<!-- Fonte do Google -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Multiculturalismo no Paraná</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    scroll-behavior:smooth;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-    font-family:'Poppins',sans-serif;
-    background:#f4f8fb;
+    background:#f4f4f4;
     color:#333;
+    line-height:1.7;
 }
 
 header{
-
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:999;
-
-    background:rgba(10,40,90,.95);
-
-    backdrop-filter:blur(10px);
-
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
-
-}
-
-nav{
-
-    max-width:1200px;
-
-    margin:auto;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:18px;
-
-}
-
-.logo{
-
+    background:#2e8b57;
     color:white;
-
-    font-size:26px;
-
-    font-weight:bold;
-
-}
-
-nav ul{
-
-    display:flex;
-
-    list-style:none;
-
-    gap:25px;
-
-}
-
-nav a{
-
-    color:white;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-    font-weight:500;
-
-}
-
-nav a:hover{
-
-    color:#FFD54F;
-
-}
-
-.hero{
-
-    height:100vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80");
-
-    background-size:cover;
-
-    background-position:center;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
     text-align:center;
-
-    color:white;
-
-    padding:20px;
-
+    padding:30px;
 }
 
-.hero h1{
-
-    font-size:58px;
-
-    margin-bottom:20px;
-
+header h1{
+    font-size:2.2em;
 }
 
-.hero p{
-
-    font-size:20px;
-
-    max-width:800px;
-
-    margin:auto;
-
-    line-height:1.8;
-
-}
-
-.botao{
-
-    display:inline-block;
-
-    margin-top:35px;
-
-    background:#43A047;
-
-    color:white;
-
-    text-decoration:none;
-
-    padding:15px 35px;
-
-    border-radius:40px;
-
-    transition:.4s;
-
-    font-weight:bold;
-
-}
-
-.botao:hover{
-
-    background:#2E7D32;
-
-    transform:scale(1.08);
-
+main{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
 }
 
 section{
-
-    padding:90px 10%;
-
-}
-
-.titulo{
-
-    text-align:center;
-
-    font-size:38px;
-
-    color:#0D47A1;
-
-    margin-bottom:40px;
-
-}
-
-.cards{
-
-    display:flex;
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-    gap:30px;
-
-}
-
-.card{
-
     background:white;
-
-    width:300px;
-
-    padding:25px;
-
-    border-radius:15px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-    transition:.4s;
-
+    margin-bottom:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
 }
 
-.card:hover{
-
-    transform:translateY(-12px);
-
+h2{
+    color:#2e8b57;
+    margin-bottom:10px;
 }
 
-.card h3{
-
-    color:#1565C0;
-
-    margin-bottom:15px;
-
-}
-
-.card p{
-
-    line-height:1.7;
-
+img{
+    width:100%;
+    border-radius:10px;
+    margin-top:15px;
 }
 
 footer{
-
-    background:#0D47A1;
-
+    background:#2e8b57;
     color:white;
-
     text-align:center;
-
-    padding:25px;
-
+    padding:15px;
 }
-
-@media(max-width:850px){
-
-nav{
-
-flex-direction:column;
-
-gap:15px;
-
-}
-
-nav ul{
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-}
-
-.hero h1{
-
-font-size:40px;
-
-}
-
-.hero p{
-
-font-size:18px;
-
-}
-
-}
-
 </style>
 
 </head>
@@ -291,336 +68,76 @@ font-size:18px;
 <body>
 
 <header>
+<h1>Multiculturalismo no Paraná</h1>
+<p>Respeito às diferenças em nossa comunidade</p>
+</header>
 
-<nav>
+<main>
 
-<div class="logo">
-🌎 Multiculturalismo
-</div>
-
-<ul>
-
-<li><a href="#inicio">Início</a></li>
-
-<li><a href="#sobre">O que é</a></li>
-
-<li><a href="#culturas">Culturas</a></li>
-
-<li><a href="#respeito">Respeito</a></li>
-
-<li><a href="#galeria">Galeria</a></li>
-
-<li><a href="#contato">Contato</a></li>
-
-</ul>
-  <!-- BANNER -->
-
-<section class="hero" id="inicio">
-
-    <div>
-
-        <h1>Respeitar as Diferenças é Construir um Mundo Melhor</h1>
-
-        <p>
-
-            O multiculturalismo representa a convivência entre diferentes povos,
-            culturas, religiões, idiomas e tradições. No Paraná, essa diversidade
-            faz parte da nossa história e fortalece valores como respeito,
-            inclusão e cidadania.
-
-        </p>
-
-        <a href="#sobre" class="botao">Conheça Mais</a>
-
-    </div>
-
-</section>
-
-<!-- SOBRE -->
-
-<section id="sobre">
-
-    <h2 class="titulo">O que é Multiculturalismo?</h2>
-
-    <p style="max-width:1000px;margin:auto;text-align:center;line-height:2;font-size:18px;">
-
-        Multiculturalismo é a convivência respeitosa entre pessoas de diferentes
-        origens, culturas, crenças e costumes. Valorizar essa diversidade
-        significa reconhecer que cada pessoa contribui para tornar a sociedade
-        mais rica, criativa e acolhedora.
-
-        <br><br>
-
-        No Brasil, especialmente no Paraná, encontramos influências de diversos
-        povos que ajudaram a construir nossa identidade cultural.
-
-    </p>
-
-</section>
-
-<!-- CULTURAS -->
-
-<section id="culturas">
-
-<h2 class="titulo">
-Culturas presentes no Paraná
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>🇩🇪 Cultura Alemã</h3>
+<section>
+<h2>O que é multiculturalismo?</h2>
 
 <p>
-
-Os descendentes de alemães contribuíram para a arquitetura,
-a culinária, as festas típicas e diversas tradições que permanecem
-presentes em muitas cidades paranaenses.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🇮🇹 Cultura Italiana</h3>
-
-<p>
-
-A imigração italiana trouxe costumes familiares,
-gastronomia, agricultura e celebrações que fazem parte da cultura
-do estado até hoje.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🇵🇱🇺🇦 Poloneses e Ucranianos</h3>
-
-<p>
-
-Esses povos contribuíram com sua religião,
-danças, culinária e tradições culturais,
-enriquecendo ainda mais a diversidade do Paraná.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🌍 Diversidade Atual</h3>
-
-<p>
-
-Hoje o Brasil recebe pessoas de vários países,
-que trazem novos idiomas, culturas e experiências,
-mostrando que a diversidade continua crescendo.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- RESPEITO -->
-
-<section id="respeito">
-
-<h2 class="titulo">
-🤝 Respeito às Diferenças
-</h2>
-
-<p style="max-width:1000px;margin:auto;text-align:center;line-height:2;font-size:18px;">
-
-Respeitar as diferenças significa tratar todas as pessoas com dignidade,
-independentemente de sua origem, religião, idioma ou costumes.
-
-<br><br>
-
-Quando aprendemos sobre outras culturas,
-desenvolvemos empatia, reduzimos o preconceito e fortalecemos
-a convivência entre diferentes comunidades.
-
-<br><br>
-
-Cada cultura possui conhecimentos, histórias e tradições importantes,
-que merecem ser preservados e valorizados pelas futuras gerações.
-
+Multiculturalismo é a convivência de diferentes culturas, tradições, religiões, costumes e modos de viver em uma mesma sociedade. Respeitar as diferenças significa valorizar cada pessoa, independentemente de sua origem, cor da pele, religião ou costumes.
 </p>
 
 </section>
-<!-- GALERIA -->
-
-<section id="galeria">
-
-    <h2 class="titulo">Galeria Cultural</h2>
-
-    <p style="text-align:center;max-width:900px;margin:auto  auto 40px;line-height:1.8;">
-
-        A diversidade cultural pode ser vista em festas, danças,
-        culinária, arquitetura e na convivência entre pessoas de
-        diferentes origens.
-
-    </p>
-
-    <div class="cards">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80" width="100%" style="border-radius:10px;">
-            <h3>Pessoas</h3>
-            <p>O respeito começa quando valorizamos cada pessoa e sua história.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=700&q=80" width="100%" style="border-radius:10px;">
-            <h3>Convivência</h3>
-            <p>Diferentes culturas podem viver juntas com respeito e cooperação.</p>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=700&q=80" width="100%" style="border-radius:10px;">
-            <h3>União</h3>
-            <p>A diversidade fortalece comunidades e aproxima pessoas.</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CURIOSIDADES -->
-
-<section style="background:#1565C0;color:white;">
-
-<h2 style="text-align:center;font-size:38px;margin-bottom:50px;">
-
-Curiosidades
-
-</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>🌎 +200</h3>
-
-<p>
-
-Mais de 200 países possuem culturas próprias,
-cada uma com costumes, idiomas e tradições diferentes.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🇧🇷 Brasil</h3>
-
-<p>
-
-O Brasil é um dos países com maior diversidade cultural do mundo,
-resultado da contribuição de diferentes povos.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>🌱 Paraná</h3>
-
-<p>
-
-O Paraná recebeu imigrantes de vários países,
-que ajudaram a construir sua identidade cultural.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FRASE -->
 
 <section>
 
-<h2 class="titulo">
-
-Mensagem
-
-</h2>
-
-<p style="text-align:center;font-size:28px;font-style:italic;line-height:2;max-width:900px;margin:auto;">
-
-"Respeitar as diferenças não significa apenas aceitar
-o outro, mas reconhecer que a diversidade torna o mundo
-mais rico, mais humano e mais bonito."
-
-</p>
-
-</section>
-
-<!-- CONTATO -->
-
-<section id="contato">
-
-<h2 class="titulo">
-
-Entre em Contato
-
-</h2>
-
-<form>
-
-<input type="text" placeholder="Nome" required>
-
-<br><br>
-
-<input type="email" placeholder="E-mail" required>
-
-<br><br>
-
-<textarea rows="6" placeholder="Mensagem"></textarea>
-
-<br><br>
-
-<button class="botao" style="border:none;cursor:pointer;">
-
-Enviar
-
-</button>
-
-</form>
-
-</section>
-
-<footer>
+<h2>O Paraná e sua diversidade cultural</h2>
 
 <p>
-
-Projeto desenvolvido para a disciplina de Multiculturalismo.
-
+O Paraná é um estado formado por povos indígenas e por imigrantes de diversos países, como italianos, alemães, poloneses, ucranianos, japoneses e muitos outros. Essa mistura pode ser percebida na culinária, nas festas típicas, na arquitetura e nas tradições presentes em várias cidades.
 </p>
 
-<p style="margin-top:10px;">
+</section>
 
-© 2026 - Todos os direitos reservados.
+<section>
 
+<h2>Multiculturalismo em uma cidade pequena</h2>
+
+<p>
+Mesmo em cidades pequenas, como Toledo e os municípios da região, encontramos pessoas com diferentes histórias, crenças e costumes. O respeito entre os moradores fortalece a amizade, a convivência e a construção de uma comunidade mais acolhedora para todos.
 </p>
 
+</section>
+
+<section>
+
+<h2>Como praticar o respeito às diferenças?</h2>
+
+<ul>
+<li>Respeitar todas as pessoas.</li>
+<li>Combater o preconceito.</li>
+<li>Valorizar diferentes culturas.</li>
+<li>Ouvir opiniões com educação.</li>
+<li>Promover a inclusão e a igualdade.</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Conclusão</h2>
+
+<p>
+O multiculturalismo torna nossa sociedade mais rica em conhecimentos, tradições e experiências. Quando respeitamos as diferenças, construímos uma cidade mais justa, acolhedora e preparada para viver em harmonia.
+</p>
+
+</section>
+
+</main>
+
+<footer>
+<p>Projeto de HTML - Multiculturalismo no Paraná</p>
 </footer>
 
 </body>
-
 </html>
-</nav>
 
-</header>
+    
+    
+
+
+
