@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Biografia - Fabiely Amabily</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #eef6ff;
+            color: #243b53;
+        }
+
+        header {
+            background: linear-gradient(135deg, #123b63, #2d6f9f);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #dbeeff;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 45px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            margin-bottom: 35px;
+            padding: 45px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(30, 80, 120, 0.12);
+            border-left: 6px solid #3c82b5;
+        }
+
+        section h2 {
+            color: #174a73;
+            font-size: 32px;
+            margin-top: 0;
+        }
+
+        section h3 {
+            color: #28658f;
+            font-size: 21px;
+            margin-top: 30px;
+        }
+
+        section p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #185886;
+        }
+
+        em {
+            color: #62829b;
+        }
+
+        .imagem-principal {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 20px 0 30px;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card-imagem {
+            flex: 1 1 200px;
+            background-color: #f4f9fd;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(30, 80, 120, 0.12);
+        }
+
+        .card-imagem img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-imagem p {
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            font-size: 16px;
+            color: #245879;
+        }
+
+        .objetivos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .objetivo {
+            flex: 1 1 300px;
+            background-color: #f4f9fd;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(30, 80, 120, 0.12);
+        }
+
+        .objetivo img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .objetivo div {
+            padding: 20px;
+        }
+
+        .objetivo h3 {
+            margin-top: 0;
+        }
+
+        #fato-historico {
+            border-left-color: #6ca6d1;
+            background-color: #f7fbff;
+        }
+
+        #objetivos {
+            border-left-color: #245f8d;
+        }
+
+        footer {
+            background-color: #123b63;
+            color: #dbeeff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Minha Biografia</h1>
+        <p>Fabiely Amabily Silveira Batista</p>
+    </header>
+
+    <main>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre-mim">
+
+            <h2>Sobre Mim</h2>
+
+            <img
+                class="imagem-principal"
+                src="eu-relato pessoal.jpg"
+                alt="Materiais de desenho e pintura">
+
+            <h3>Quem sou eu?</h3>
+
+            <p>
+                Meu nome é <strong>Fabiely Amabily Silveira Batista</strong>.
+                Nasci no dia <strong>03 de setembro de 2011</strong>, em
+                <strong>Cascavel, Paraná</strong>, no Hospital Gênesis.
+                Atualmente, moro em <strong>Nova Santa Rosa, Paraná</strong>.
+            </p>
+
+            <p>
+                Sou uma pessoa extrovertida, espontânea e muito ligada às pessoas
+                que amo. Minha família e meus amigos são muito importantes para mim,
+                e procuro sempre me importar e estar presente na vida das pessoas
+                que fazem parte da minha história.
+            </p>
+
+            <h3>Meus hobbies e interesses</h3>
+
+            <p>
+                Tenho muitos interesses e gosto de aproveitar meu tempo fazendo
+                coisas diferentes. Entre as atividades que mais gosto estão
+                cozinhar, ler, desenhar, pintar, ouvir música e aprender a tocar
+                instrumentos.
+            </p>
+
+            <div class="galeria">
+
+                <div class="card-imagem">
+                    <img
+                        src="imagem livros-relato pessoal.jpg"
+                        alt="Livros">
+                    <p>📚 Leitura</p>
+                </div>
+
+                <div class="card-imagem">
+                    <img
+                        src="imgem pintura - relato pessoal.jpg"
+                        alt="Pintura">
+                    <p>🎨 Pintura e desenho</p>
+                </div>
+
+                <div class="card-imagem">
+                    <img
+                        src="musica-relato pessoal.jpg"
+                        alt="Música">
+                    <p>🎵 Música</p>
+                </div>
+
+                <div class="card-imagem">
+                    <img
+                        src="bicicleta-relato pessoal.jpg"
+                        alt="Bicicleta">
+                    <p>🚲 Bicicleta</p>
+                </div>
+
+            </div>
+
+            <p>
+                Também gosto de fazer escalada, viajar, sair e encontrar meus amigos,
+                ir à igreja, participar de caravanas e aproveitar momentos ao lado
+                das pessoas que amo. Além disso, gosto de cuidar de mim, incluindo
+                cuidados com o cabelo e a pele.
+            </p>
+
+        </section>
+
+
+        <!-- NASCIMENTO -->
+        <section id="nascimento">
+
+            <h2>Meu Nascimento</h2>
+
+            <img
+                class="imagem-principal"
+                src="WhatsApp Image 2026-08-04 at 09.18.46.jpeg"
+                alt="Momento familiar">
+
+            <p>
+                “Quando minha menina nasceu, meu mundo ganhou mais sentido.
+                Com a chegada da minha primogênita, eu me tornei mãe e conheci
+                um amor incondicional, que transformou tudo dentro de mim.
+            </p>
+
+            <p>
+                Lembro dos seus olhinhos espertos, fixos nos meus. Eu poderia
+                passar horas te olhando e ainda assim pareceria pouco.
+                Suas mãozinhas, tão pequeninas, já me faziam imaginar todas as
+                grandes coisas que você seria capaz de realizar.
+            </p>
+
+            <p>
+                Seu calor, seu cheiro, seu sorriso, seu abraço… cada detalhe
+                da sua infância está guardado em mim.
+            </p>
+
+            <p>
+                Você sempre gostou de brincar livre pelo quintal, com água,
+                com barro, com tintas, na árvore, no balanço, andar de bicicleta,
+                brincar na casinha de boneca que o vovô fez.
+            </p>
+
+            <p>
+                Desde pequeninha gostava de cantar, criar músicas, fazer de conta
+                que tocava. Depois, aprendeu mesmo a tocar e cantar com uma voz doce.
+            </p>
+
+            <p>
+                Você tinha um amigo invisível, um gatinho, vivia com ele no colo,
+                conversando e brincando, até que ganhou mais dois irmãozinhos e
+                então a nossa casa ficou ainda mais cheia de alegria, de vozes
+                infantis, de brinquedos espalhados e de muito amor.
+            </p>
+
+            <p>
+                Sua trajetória escolar é marcada por muitas conquistas, desde
+                os primeiros anos escolares, você sempre foi muito dedicada,
+                caprichosa, detalhista e organizada.
+            </p>
+
+            <p>
+                Hoje já é a minha menina moça... Todos os dias, existe em mim o
+                desejo de viver, de estar ao seu lado e de acompanhar cada passo seu,
+                cada descoberta, cada conquista, cada fase da sua vida.
+            </p>
+
+            <p>
+                Porque ser sua mãe é um dos maiores presentes que a vida me deu.
+            </p>
+
+            <p>
+                <strong>
+                    A Fabiely Amabily é o que o seu nome representa:
+                    amável, amorosa e amada.
+                </strong>”
+            </p>
+
+            <p><em>— Relato de minha mãe, Fabiana</em></p>
+
+        </section>
+
+
+        <!-- INFÂNCIA -->
+        <section id="infancia">
+
+            <h2>Minha Infância</h2>
+
+            <p>
+                Minha infância foi marcada por brincadeiras, criatividade,
+                música e muitos momentos especiais em família.
+            </p>
+
+            <p>
+                Eu gostava de brincar livremente pelo quintal, com água, barro
+                e tintas. Também adorava brincar na árvore, no balanço e andar
+                de bicicleta. Um lugar especial das minhas brincadeiras era a
+                casinha de boneca que meu avô fez.
+            </p>
+
+            <p>
+                Desde pequena, eu gostava de cantar, criar músicas e fingir
+                que tocava instrumentos. Com o tempo, aprendi de verdade a
+                tocar e cantar, desenvolvendo ainda mais meu gosto pela música.
+            </p>
+
+            <p>
+                Também tive um amigo invisível: um gatinho que eu imaginava
+                e que vivia comigo, no meu colo, enquanto eu conversava e brincava.
+            </p>
+
+            <p>
+                Mais tarde, ganhei dois irmãozinhos, e nossa casa ficou ainda
+                mais cheia de alegria, vozes infantis, brinquedos espalhados
+                e muito amor.
+            </p>
+
+        </section>
+
+
+        <!-- FATO MARCANTE -->
+        <section id="fato-historico">
+
+            <h2>Um Fato Marcante da Minha Vida</h2>
+
+            <img
+                class="imagem-principal"
+                src="bicicleta01-relato pessoal.jpg"
+                alt="Bicicleta">
+
+            <p>
+                “Lembro-me de quando você aprendeu a andar de bicicleta sem rodinhas.
+                Fomos para a rua, em frente de casa, e o papai tirou as rodinhas.
+            </p>
+
+            <p>
+                Então, ele foi te segurando por meia quadra e, de repente, te soltou.
+                Você continuou pedalando, pedalando e, toda feliz, foi até a esquina,
+                virou e voltou, falando sem parar que tinha conseguido.
+                Vibramos com você!
+            </p>
+
+            <p>
+                Mas, depois de algumas voltas, você caiu. Levantou-se do chão,
+                levantou a bicicleta, estava com os joelhos ralados e as
+                mãozinhas vermelhas.
+            </p>
+
+            <p>
+                Você nos olhou e falou:
+                <strong>“Nem está doendo!”</strong>
+            </p>
+
+            <p>
+                Montou na bicicleta e foi andar de novo.”
+            </p>
+
+            <p><em>— Uma lembrança da minha família</em></p>
+
+        </section>
+
+
+        <!-- TRAJETÓRIA ESCOLAR -->
+        <section id="trajetoria-escolar">
+
+            <h2>Minha Trajetória Escolar</h2>
+
+            <img
+                class="imagem-principal"
+                src="estudos-relato pessaoal.jpg"
+                alt="Estudantes em uma escola">
+
+            <p>
+                Você ingressou na escola aos 4 aninhos e iniciou sua trajetória
+                escolar no Infantil IV. Desde pequena, demonstrava curiosidade,
+                vontade de aprender e alegria em descobrir coisas novas.
+            </p>
+
+            <p>
+                Do 1º ao 5º ano do Ensino Fundamental, estudou em outra escola
+                municipal. Tive o privilégio de acompanhar parte dessa caminhada
+                como sua professora durante dois anos, uma experiência muito
+                especial para mim.
+            </p>
+
+            <p>
+                Ao concluir essa etapa, você ingressou em um Colégio Estadual,
+                onde cursou do 6º ao 9º ano. A cada ano, você foi construindo
+                sua própria história, superando dificuldades e conquistando
+                novos conhecimentos.
+            </p>
+
+            <p>
+                Sua trajetória escolar é marcada por dedicação, perseverança
+                e crescimento. Cada experiência tem contribuído para formar
+                a jovem inteligente que você é.
+            </p>
+
+            <p>
+                Seu pai e eu queremos que você sonhe e vá atrás dos seus objetivos.
+                Sempre estaremos aqui para te incentivar e te orientar.
+                Acreditamos nas suas capacidades e no seu potencial para conquistar
+                tudo aquilo que desejar.
+            </p>
+
+        </section>
+
+
+        <!-- OBJETIVOS -->
+        <section id="objetivos">
+
+            <h2>Meus Objetivos e Sonhos</h2>
+
+            <h3>Objetivos profissionais</h3>
+
+            <div class="objetivos">
+
+                <div class="objetivo">
+
+                    <img
+                        src="imagem arquitetura - relato pessoal.jpg"
+                        alt="Projeto de arquitetura">
+
+                    <div>
+                        <h3>🏛️ Arquitetura e Design</h3>
+
+                        <p>
+                            Tenho interesse em seguir a área de
+                            <strong>Arquitetura e Design</strong>, pois gosto
+                            de criatividade, desenho e de transformar ideias
+                            em algo concreto.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="objetivo">
+
+                    <img
+                        src="estilista-relato pessoal.jpg"
+                        alt="Moda e estilismo">
+
+                    <div>
+                        <h3>👗 Moda e Estilismo</h3>
+
+                        <p>
+                            Também tenho muita vontade de conhecer e trabalhar
+                            com <strong>Moda e Estilismo</strong>, uma área que
+                            também desperta muito meu interesse e minha criatividade.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h3>Meus sonhos pessoais</h3>
+
+            <p>
+                Um dos meus grandes sonhos é construir uma família bem estruturada,
+                preservando os valores cristãos que são importantes para mim.
+                No futuro, gostaria de ter três filhos: dois meninos gêmeos e uma menina.
+            </p>
+
+            <p>
+                Também sonho em ter uma casa em um lugar tranquilo, cercado pela
+                natureza e distante da agitação da cidade, com espaço para criar
+                cavalos e viver uma vida mais próxima da natureza.
+            </p>
+
+            <p>
+                Quero viajar, conhecer muitos lugares e viver experiências
+                inesquecíveis ao lado dos meus amigos e das pessoas que amo.
+            </p>
+
+            <p>
+                Também quero continuar desenvolvendo meu amor pela música e aprender
+                a tocar instrumentos como <strong>guitarra, violão, violoncelo
+                e violino</strong>.
+            </p>
+
+            <div class="galeria">
+
+                <div class="card-imagem">
+                    <img
+                        src="viagar avião-relato pessoal.jpg"
+                        alt="Viagem e natureza">
+                    <p>✈️ Viajar e conhecer lugares</p>
+                </div>
+
+                <div class="card-imagem">
+                    <img
+                        src="cavalos-relato pessoal.jpg"
+                        alt="Cavalos no campo">
+                    <p>🐴 Viver perto da natureza</p>
+                </div>
+
+                <div class="card-imagem">
+                    <img
+                        src="guitarra-relato pessoal.jpg"
+                        alt="Instrumentos musicais">
+                    <p>🎸 Aprender novos instrumentos</p>
+                </div>
+
+            </div>
+
+            <p>
+                Acima de tudo, quero crescer, aprender cada vez mais, conquistar
+                meus objetivos profissionais e construir uma vida da qual eu possa
+                me orgulhar.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Fabiely Amabily Silveira Batista — 2026</p>
+    </footer>
+
+</body>
+
+</html>
