@@ -1,143 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Multiculturalismo no Paraná</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-    background:#f4f4f4;
-    color:#333;
-    line-height:1.7;
-}
+    <title>Projeto Integrador - Grupo 8</title>
 
-header{
-    background:#2e8b57;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
+    <style>
 
-header h1{
-    font-size:2.2em;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-main{
-    width:90%;
-    max-width:1000px;
-    margin:30px auto;
-}
+        body {
+            background: #7dbaba;
+            color: #4d6463;
+            min-height: 100vh;
+        }
 
-section{
-    background:white;
-    margin-bottom:20px;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-}
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+        }
 
-h2{
-    color:#2e8b57;
-    margin-bottom:10px;
-}
+        header h1 {
+            color: #2b5d6f;
+            margin-bottom: 8px;
+        }
 
-img{
-    width:100%;
-    border-radius:10px;
-    margin-top:15px;
-}
+        header p {
+            color: #4d6463;
+        }
 
-footer{
-    background:#2e8b57;
-    color:white;
-    text-align:center;
-    padding:15px;
-}
-</style>
+        .inicio {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .inicio h2 {
+            font-size: 42px;
+            color: #2b5d6f;
+            margin-bottom: 15px;
+        }
+
+        .inicio > p {
+            font-size: 19px;
+            margin-bottom: 40px;
+        }
+
+        .pessoas {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 30px;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .pessoa {
+            background: #caf0ec;
+            width: 280px;
+            padding: 35px 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+            transition: 0.3s;
+        }
+
+        .pessoa:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        .pessoa h3 {
+            font-size: 28px;
+            color: #2b5d6f;
+            margin-bottom: 15px;
+        }
+
+        .pessoa p {
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .botao {
+            display: inline-block;
+            text-decoration: none;
+            background: #70b6b3;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #2b5d6f;
+        }
+
+        footer {
+            background: #8fc8c4;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+
+            .inicio h2 {
+                font-size: 32px;
+            }
+
+            .pessoa {
+                width: 90%;
+                max-width: 350px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
+
 <body>
 
-<header>
-<h1>Multiculturalismo no Paraná</h1>
-<p>Respeito às diferenças em nossa comunidade</p>
-</header>
+    <header>
 
-<main>
+        <h1>Projeto Integrador - Grupo 8</h1>
 
-<section>
-<h2>O que é multiculturalismo?</h2>
+        <p>Conheça as páginas de cada integrante do grupo</p>
 
-<p>
-Multiculturalismo é a convivência de diferentes culturas, tradições, religiões, costumes e modos de viver em uma mesma sociedade. Respeitar as diferenças significa valorizar cada pessoa, independentemente de sua origem, cor da pele, religião ou costumes.
-</p>
+    </header>
 
-</section>
 
-<section>
+    <section class="inicio">
 
-<h2>O Paraná e sua diversidade cultural</h2>
+        <h2>Nosso Grupo</h2>
 
-<p>
-O Paraná é um estado formado por povos indígenas e por imigrantes de diversos países, como italianos, alemães, poloneses, ucranianos, japoneses e muitos outros. Essa mistura pode ser percebida na culinária, nas festas típicas, na arquitetura e nas tradições presentes em várias cidades.
-</p>
+        <p>
+            Escolha uma das integrantes para acessar sua página.
+        </p>
 
-</section>
 
-<section>
+        <div class="pessoas">
 
-<h2>Multiculturalismo em uma cidade pequena</h2>
 
-<p>
-Mesmo em cidades pequenas, como Toledo e os municípios da região, encontramos pessoas com diferentes histórias, crenças e costumes. O respeito entre os moradores fortalece a amizade, a convivência e a construção de uma comunidade mais acolhedora para todos.
-</p>
+           
 
-</section>
+            <div class="pessoa">
 
-<section>
+                <h3>Yasmin</h3>
 
-<h2>Como praticar o respeito às diferenças?</h2>
+                <p>
+                    Conheça a trajetória, experiências e informações
+                    sobre Yasmin.
+                </p>
 
-<ul>
-<li>Respeitar todas as pessoas.</li>
-<li>Combater o preconceito.</li>
-<li>Valorizar diferentes culturas.</li>
-<li>Ouvir opiniões com educação.</li>
-<li>Promover a inclusão e a igualdade.</li>
-</ul>
+                <a href="Yas.html" class="botao">
+                    Ver página
+                </a>
 
-</section>
+            </div>
 
-<section>
 
-<h2>Conclusão</h2>
+            <div class="pessoa">
 
-<p>
-O multiculturalismo torna nossa sociedade mais rica em conhecimentos, tradições e experiências. Quando respeitamos as diferenças, construímos uma cidade mais justa, acolhedora e preparada para viver em harmonia.
-</p>
+                <h3>Fabiely</h3>
 
-</section>
+                <p>
+                    Conheça a trajetória, experiências e informações
+                    sobre Fabiely.
+                </p>
 
-</main>
+                <a href="fabi.html" class="botao">
+                    Ver página
+                </a>
 
-<footer>
-<p>Projeto de HTML - Multiculturalismo no Paraná</p>
-</footer>
+            </div>
+
+
+        
+            <div class="pessoa">
+
+                <h3>Milena</h3>
+
+                <p>
+                    Conheça a trajetória, experiências e informações
+                    sobre Milena.
+                </p>
+
+                <a href="biografia.html" class="botao">
+                    Ver página
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>Projeto Integrador — Grupo 8</p>
+
+    </footer>
 
 </body>
+
 </html>
-
-    
-    
-
-
-
