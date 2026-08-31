@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre Mim - Yasmin</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #dffaf6;
+            color: white;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #008f83, #35c9bd);
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+        }
+
+        /* CONTEÚDO */
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 35px auto;
+        }
+
+        /* CARDS */
+
+        .card {
+            background: #26bfb2;
+            border-radius: 22px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+        }
+
+        .card h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .card p {
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        /* INFORMAÇÕES DO NASCIMENTO */
+
+        .info {
+            background: #008f83;
+            border-radius: 16px;
+            padding: 22px;
+            margin-top: 22px;
+        }
+
+        .info p {
+            text-align: left;
+            margin: 8px 0;
+        }
+
+        /* TRAJETÓRIA */
+
+        .timeline {
+            border-left: 4px solid white;
+            padding-left: 25px;
+            margin-top: 20px;
+        }
+
+        .timeline-item {
+            background: #008f83;
+            border-radius: 15px;
+            padding: 18px;
+            margin-bottom: 18px;
+        }
+
+        .timeline-item h3 {
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+
+        /* CARACTERÍSTICAS */
+
+        .caracteristicas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .caracteristica {
+            background: #008f83;
+            border-radius: 15px;
+            padding: 22px 12px;
+            text-align: center;
+            font-size: 16px;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* FRASE FINAL */
+
+        .frase {
+            text-align: center;
+            background: #008f83;
+            border-radius: 18px;
+            padding: 25px;
+            font-size: 20px;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background: #006f67;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            .caracteristicas {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .card h2 {
+                font-size: 25px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>Sobre Mim</h1>
+
+        <p>
+            Conheça um pouco da minha história
+        </p>
+
+    </header>
+
+
+    <main class="container">
+
+
+        <!-- NASCIMENTO -->
+
+        <section class="card">
+
+            <h2>🌟 Meu Nascimento</h2>
+
+            <p>
+                Meu nome é Yasmin Vitória da Silva Reis.
+                Nasci no dia 03 de dezembro de 2011, às 1h25
+                da madrugada, no Hospital Bom Jesus, em
+                Toledo - PR.
+            </p>
+
+            <br>
+
+            <p>
+                Nasci de parto cesariana. A gestação foi tranquila
+                e meu nascimento marcou o começo da minha história.
+            </p>
+
+
+            <div class="info">
+
+                <p><strong>📅 Data:</strong> 03/12/2011</p>
+
+                <p><strong>⏰ Horário:</strong> 1h25</p>
+
+                <p><strong>📍 Local:</strong> Hospital Bom Jesus - Toledo/PR</p>
+
+                <p><strong>⚖️ Peso:</strong> 3,020 kg</p>
+
+                <p><strong>📏 Comprimento:</strong> 49,6 cm</p>
+
+                <p><strong>🩸 Tipo sanguíneo:</strong> A+</p>
+
+                <p><strong>👶 Idade gestacional:</strong> 39 semanas e 2 dias</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFÂNCIA -->
+
+        <section class="card">
+
+            <h2>💚 Minha Infância</h2>
+
+            <p>
+                Segundo minha mãe, desde pequena sempre fui uma
+                criança esperta e curiosa. Comecei a engatinhar
+                bem cedo e andei com apenas 9 meses.
+            </p>
+
+            <br>
+
+            <p>
+                Aos 3 anos, já sabia escrever meu nome, contar
+                e reconhecer as cores. Também aprendi a andar
+                de bicicleta e patinete elétrico.
+            </p>
+
+            <br>
+
+            <p>
+                Sempre gostei de atividades como skate, patins
+                e outras atividades mais radicais.
+            </p>
+
+        </section>
+
+
+        <!-- TRAJETÓRIA ESCOLAR -->
+
+        <section class="card">
+
+            <h2>📚 Minha Trajetória Escolar</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <h3>👧 Aos 3 anos</h3>
+
+                    <p>
+                        Comecei o Infantil 4 na Escola Municipal
+                        Oswaldo Cruz.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>📖 Aos 5 anos</h3>
+
+                    <p>
+                        Aprendi a ler e sempre fui dedicada
+                        aos estudos.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>🏫 Aos 10 anos</h3>
+
+                    <p>
+                        Comecei o Ensino Fundamental no
+                        Colégio João Arnaldo Ritt.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>🎓 Oitavo ano</h3>
+
+                    <p>
+                        Fui transferida para o Colégio do
+                        Campo Novo Sobradinho.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <h3>✨ Atualmente</h3>
+
+                    <p>
+                        Estudo no IFPR e pratico
+                        ginástica acrobática.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARACTERÍSTICAS -->
+
+        <section class="card">
+
+            <h2>✨ Minhas Características</h2>
+
+            <div class="caracteristicas">
+
+                <div class="caracteristica">
+                    📚<br>
+                    Dedicada aos estudos
+                </div>
+
+                <div class="caracteristica">
+                    💡<br>
+                    Esperta e curiosa
+                </div>
+
+                <div class="caracteristica">
+                    🤝<br>
+                    Gosto de ajudar os colegas
+                </div>
+
+                <div class="caracteristica">
+                    🤸<br>
+                    Pratico ginástica acrobática
+                </div>
+
+                <div class="caracteristica">
+                    🛹<br>
+                    Gosto de skate e patins
+                </div>
+
+                <div class="caracteristica">
+                    🎯<br>
+                    Busco aprender e evoluir
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE A FASE ATUAL -->
+
+        <section class="card">
+
+            <h2>🌱 Minha Fase Atual</h2>
+
+            <p>
+                Atualmente estou vivendo uma fase de mudanças,
+                descobertas e novos desafios. Ainda tenho muito
+                a aprender e quero desenvolver cada vez mais
+                minha determinação, meu foco e minha
+                independência.
+            </p>
+
+            <br>
+
+            <p>
+                Também procuro participar das atividades,
+                ajudar meus colegas e continuar aprendendo
+                com cada experiência.
+            </p>
+
+        </section>
+
+
+        <!-- FRASE FINAL -->
+
+        <div class="frase">
+
+            “Cada fase da minha vida traz novos aprendizados
+            e ajuda a construir quem eu sou.”
+
+        </div>
+
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            Sobre Mim — Yasmin Vitória da Silva Reis
+        </p>
+
+        <p>
+            2026
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
