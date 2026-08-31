@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nossa Região</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #dcefeb;
+            color: #405b59;
+        }
+
+        /* MENU */
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+
+            padding: 18px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: #2b5d6f;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #405b59;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #70aaa7;
+        }
+
+
+        /* CAPA */
+
+        .inicio {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 100px 20px 50px;
+
+            background:
+                linear-gradient(
+                    rgba(125, 186, 186, 0.75),
+                    rgba(125, 186, 186, 0.75)
+                );
+        }
+
+        .inicio-conteudo {
+            max-width: 800px;
+        }
+
+        .inicio h1 {
+            font-size: 65px;
+            color: #2b5d6f;
+            margin-bottom: 20px;
+        }
+
+        .inicio h3 {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+
+
+        /* PARTE DOS SITES */
+
+        .sites {
+            background: #ffffff;
+            padding: 90px 20px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .titulo h2 {
+            font-size: 42px;
+            color: #2b5d6f;
+            margin-bottom: 10px;
+        }
+
+        .titulo p {
+            font-size: 17px;
+        }
+
+
+        /* CARDS */
+
+        .cards {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 30px;
+        }
+
+        .card {
+            background: #d1f6f4;
+
+            padding: 40px 30px;
+
+            border-radius: 25px;
+
+            text-align: center;
+
+            box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            font-size: 30px;
+            color: #2b5d6f;
+            margin-bottom: 8px;
+        }
+
+        .card h4 {
+            color: #6b9896;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 25px;
+        }
+
+
+        /* BOTÃO */
+
+        .botao {
+            display: inline-block;
+
+            padding: 12px 28px;
+
+            background: #2b5d6f;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 25px;
+
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background: #70aaa7;
+            transform: scale(1.05);
+        }
+
+
+        /* SOBRE */
+
+        .sobre {
+            background: #e9f5f3;
+            padding: 90px 20px;
+
+            text-align: center;
+        }
+
+        .sobre-conteudo {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .sobre h2 {
+            color: #2b5d6f;
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+
+        .sobre p {
+            font-size: 17px;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+
+
+        /* RODAPÉ */
+
+        footer {
+            background: #2b5d6f;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+
+        /* CELULAR */
+
+        @media (max-width: 850px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .inicio h1 {
+                font-size: 48px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- MENU -->
+
+    <header>
+
+        <nav>
+
+            <h2>
+                Nossa Região
+            </h2>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#sites">
+                        Nossos Sites
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#sobre">
+                        Sobre o Projeto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- CAPA -->
+
+    <section class="inicio" id="inicio">
+
+        <div class="inicio-conteudo">
+
+            <h1>
+                Nossa Região
+            </h1>
+
+            <h3>
+                Conheça um pouco da história de cada uma de nós
+            </h3>
+
+            <p>
+                Somos três integrantes que vivem em diferentes
+                lugares do Paraná. Nesta página você pode
+                acessar o site individual de cada integrante
+                e conhecer melhor sua história e sua região.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SITES -->
+
+    <section class="sites" id="sites">
+
+        <div class="titulo">
+
+            <h2>
+                Conheça nossos sites
+            </h2>
+
+            <p>
+                Escolha uma das integrantes para acessar seu site.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <!-- MILENA -->
+
+            <div class="card">
+
+                <h3>
+                    Milena
+                </h3>
+
+                <h4>
+                    Nova Santa Rosa — Alto Santa Fé
+                </h4>
+
+                <p>
+                    Conheça a história de Milena e um pouco
+                    mais sobre Alto Santa Fé, pequena comunidade
+                    pertencente ao município de Nova Santa Rosa.
+                </p>
+
+                <!-- COLOQUE AQUI O LINK DO SITE DA MILENA -->
+
+                <a
+                    href="alto.html"
+                    class="botao"
+                >
+                    Acessar site
+                </a>
+
+            </div>
+
+
+
+            <!-- FABIELY -->
+
+            <div class="card">
+
+                <h3>
+                    Fabiely
+                </h3>
+
+                <h4>
+                    Nova Santa Rosa — Paraná
+                </h4>
+
+                <p>
+                    Acesse o site da Fabiely para conhecer
+                    sua história e sua relação com Nova Santa Rosa.
+                </p>
+
+                <!-- COLOQUE AQUI O LINK DO SITE DA FABIELY -->
+
+                <a
+                    href="nova.html"
+                    class="botao"
+                >
+                    Acessar site
+                </a>
+
+            </div>
+
+
+
+            <!-- YASMIN -->
+
+            <div class="card">
+
+                <h3>
+                    Yasmin
+                </h3>
+
+                <h4>
+                    Toledo — Paraná
+                </h4>
+
+                <p>
+                    Acesse o site da Yasmin para conhecer
+                    sua história e um pouco mais sobre Toledo.
+                </p>
+
+                <!-- COLOQUE AQUI O LINK DO SITE DA YASMIN -->
+
+                <a
+                    href="toledo.html"
+                    class="botao"
+                >
+                    Acessar site
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SOBRE O PROJETO -->
+
+    <section class="sobre" id="sobre">
+
+        <div class="sobre-conteudo">
+
+            <h2>
+                Sobre o projeto
+            </h2>
+
+            <p>
+                Este projeto foi desenvolvido para apresentar
+                um pouco das histórias e dos lugares que fazem
+                parte da vida das integrantes do grupo.
+            </p>
+
+            <p>
+                Milena mora no interior de Alto Santa Fé,
+                uma comunidade pertencente a Nova Santa Rosa.
+                Fabiely mora na área urbana de Nova Santa Rosa
+                e Yasmin mora em Toledo.
+            </p>
+
+            <p>
+                Cada site apresenta uma história diferente,
+                mostrando um pouco da realidade e das
+                experiências de cada integrante.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            <strong>Nossa Região</strong>
+        </p>
+
+        <p>
+            Milena • Fabiely • Yasmin
+        </p>
+
+        <p>
+            Projeto Integrador
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
