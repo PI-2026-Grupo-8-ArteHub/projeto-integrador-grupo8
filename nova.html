@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Santa Rosa - Onde Vivemos</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #35223f;
+
+            background:
+                linear-gradient(rgba(238, 225, 248, 0.82), rgba(225, 205, 239, 0.88)),
+                url("https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=2000&q=90");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+
+        /* MENU */
+
+        nav {
+            background-color: #432052;
+            color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 8%;
+
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #dcb9ee;
+        }
+
+
+        /* CAPA */
+
+        .inicio {
+            min-height: 85vh;
+
+            display: flex;
+            align-items: center;
+
+            padding: 60px 10%;
+
+            color: white;
+
+            background:
+                linear-gradient(rgba(52, 24, 68, 0.78), rgba(67, 31, 84, 0.72)),
+                url("https://novasantarosa.pr.gov.br/wp-content/uploads/2025/02/PREFEITURA-DE-NOVA-SANTA-ROSA.jpg");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .inicio-texto {
+            max-width: 700px;
+        }
+
+        .inicio h1 {
+            font-family: Georgia, serif;
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+
+        .inicio h1 span {
+            color: #d9b9ed;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .botao {
+            display: inline-block;
+
+            margin-top: 25px;
+            padding: 13px 25px;
+
+            background-color: #d4b0e8;
+            color: #3e1d4d;
+
+            border-radius: 25px;
+
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        /* CONTEÚDO */
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        section {
+            margin-bottom: 70px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .titulo h2 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            color: #542466;
+            margin-bottom: 10px;
+        }
+
+        .titulo p {
+            color: #654d6d;
+        }
+
+
+        /* SOBRE */
+
+        .sobre {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .texto {
+            background-color: rgba(255, 255, 255, 0.90);
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            border-left: 6px solid #80509d;
+        }
+
+        .texto h3 {
+            font-family: Georgia, serif;
+            font-size: 30px;
+            color: #542466;
+            margin-bottom: 15px;
+        }
+
+        .texto p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .foto {
+            width: 100%;
+            height: 420px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            box-shadow: 0 10px 25px rgba(63, 30, 78, 0.25);
+        }
+
+
+        /* NÚMEROS */
+
+        .numeros {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .numero {
+            background-color: rgba(255, 255, 255, 0.90);
+
+            padding: 25px;
+
+            text-align: center;
+
+            border-radius: 18px;
+
+            border-top: 5px solid #80509d;
+        }
+
+        .numero h3 {
+            font-family: Georgia, serif;
+            font-size: 35px;
+            color: #70418a;
+        }
+
+        .numero p {
+            margin-top: 8px;
+            font-size: 13px;
+        }
+
+
+        /* HISTÓRIA */
+
+        .historia {
+            background-color: rgba(255, 255, 255, 0.90);
+
+            padding: 40px;
+
+            border-radius: 20px;
+        }
+
+        .historia-item {
+            border-left: 3px solid #80509d;
+
+            padding: 0 0 30px 25px;
+
+            margin-bottom: 25px;
+        }
+
+        .historia-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .historia-item span {
+            color: #80509d;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .historia-item h3 {
+            color: #542466;
+            margin: 7px 0;
+        }
+
+        .historia-item p {
+            line-height: 1.7;
+        }
+
+
+        /* GALERIA */
+
+        .galeria {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 350px;
+
+            object-fit: cover;
+
+            border-radius: 20px;
+
+            box-shadow: 0 10px 25px rgba(63, 30, 78, 0.20);
+        }
+
+
+        /* CULTURA */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.90);
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            border-bottom: 5px solid #80509d;
+        }
+
+        .card .icone {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #542466;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+
+        /* CURIOSIDADES */
+
+        .curiosidades {
+            background-color: #4a235b;
+
+            color: white;
+
+            padding: 45px;
+
+            border-radius: 25px;
+        }
+
+        .curiosidades h2 {
+            font-family: Georgia, serif;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .lista {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .curiosidade {
+            background-color: rgba(255, 255, 255, 0.10);
+
+            padding: 18px;
+
+            border-radius: 12px;
+
+            line-height: 1.6;
+        }
+
+
+        /* FUTURO */
+
+        .futuro {
+            background-color: rgba(235, 218, 244, 0.95);
+
+            padding: 50px;
+
+            border-radius: 25px;
+
+            text-align: center;
+        }
+
+        .futuro h2 {
+            font-family: Georgia, serif;
+            font-size: 45px;
+            color: #542466;
+
+            margin-bottom: 20px;
+        }
+
+        .futuro p {
+            max-width: 800px;
+
+            margin: auto;
+
+            line-height: 1.9;
+        }
+
+
+        /* FRASE FINAL */
+
+        .frase {
+            text-align: center;
+
+            padding: 50px 20px;
+        }
+
+        .frase p {
+            font-family: Georgia, serif;
+
+            font-size: 35px;
+
+            color: #542466;
+        }
+
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #32163e;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px;
+        }
+
+        footer h3 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            color: #d9c4df;
+            font-size: 13px;
+        }
+
+
+        /* CELULAR */
+
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .inicio h1 {
+                font-size: 50px;
+            }
+
+            .sobre {
+                grid-template-columns: 1fr;
+            }
+
+            .numeros {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+
+            .lista {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- MENU -->
+
+    <nav>
+
+        <div class="logo">
+            Nova Santa Rosa
+        </div>
+
+        <ul>
+
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#cultura">Cultura</a></li>
+            <li><a href="#futuro">Futuro</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- INÍCIO -->
+
+    <header class="inicio" id="inicio">
+
+        <div class="inicio-texto">
+
+            <p>ONDE VIVEMOS • PARANÁ</p>
+
+            <h1>
+                Nova <span>Santa</span> Rosa
+            </h1>
+
+            <p>
+                Uma cidade construída por histórias, famílias,
+                trabalho, cultura e tradição. Conheça um pouco
+                mais sobre o lugar que chamamos de casa.
+            </p>
+
+            <a href="#sobre" class="botao">
+                Conheça a cidade
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- SOBRE -->
+
+        <section id="sobre">
+
+            <div class="titulo">
+
+                <h2>Onde Vivemos</h2>
+
+                <p>
+                    Um pouco sobre Nova Santa Rosa
+                </p>
+
+            </div>
+
+
+            <div class="sobre">
+
+                <div class="texto">
+
+                    <h3>
+                        Uma cidade com história
+                    </h3>
+
+                    <p>
+                        Nova Santa Rosa é um município localizado
+                        na região Oeste do Paraná. A cidade possui
+                        uma história marcada pela colonização e
+                        pelo trabalho das famílias que ajudaram
+                        a construir a comunidade.
+                    </p>
+
+                    <p>
+                        A colonização começou oficialmente em
+                        13 de janeiro de 1953. Os primeiros
+                        colonizadores vieram principalmente do
+                        Sul do Brasil.
+                    </p>
+
+                    <p>
+                        Atualmente, Nova Santa Rosa continua
+                        desenvolvendo sua agricultura, comércio,
+                        indústria, educação e cultura.
+                    </p>
+
+                </div>
+
+
+                <img
+                    class="foto"
+                    src="https://novasantarosa.pr.gov.br/wp-content/uploads/2025/02/PREFEITURA-DE-NOVA-SANTA-ROSA.jpg"
+                    alt="Prefeitura de Nova Santa Rosa"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- NÚMEROS -->
+
+        <section>
+
+            <div class="titulo">
+
+                <h2>Nova Santa Rosa em números</h2>
+
+            </div>
+
+
+            <div class="numeros">
+
+                <div class="numero">
+
+                    <h3>50</h3>
+
+                    <p>
+                        anos de emancipação
+                    </p>
+
+                </div>
+
+
+                <div class="numero">
+
+                    <h3>1953</h3>
+
+                    <p>
+                        início da colonização
+                    </p>
+
+                </div>
+
+
+                <div class="numero">
+
+                    <h3>1977</h3>
+
+                    <p>
+                        instalação do município
+                    </p>
+
+                </div>
+
+
+                <div class="numero">
+
+                    <h3>204,66</h3>
+
+                    <p>
+                        km² de área territorial
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- HISTÓRIA -->
+
+        <section id="historia">
+
+            <div class="titulo">
+
+                <h2>Nossa História</h2>
+
+                <p>
+                    Alguns momentos importantes
+                </p>
+
+            </div>
+
+
+            <div class="historia">
+
+
+                <div class="historia-item">
+
+                    <span>1946</span>
+
+                    <h3>
+                        A colonização do Oeste
+                    </h3>
+
+                    <p>
+                        A Companhia Industrial Madeireira
+                        Colonizadora Rio Paraná S/A, conhecida
+                        como Maripá, participou do processo de
+                        colonização da região.
+                    </p>
+
+                </div>
+
+
+                <div class="historia-item">
+
+                    <span>1953</span>
+
+                    <h3>
+                        Chegada dos colonizadores
+                    </h3>
+
+                    <p>
+                        Em 13 de janeiro de 1953, começou oficialmente
+                        a colonização de Nova Santa Rosa. Muitas
+                        famílias chegaram em busca de novas
+                        oportunidades.
+                    </p>
+
+                </div>
+
+
+                <div class="historia-item">
+
+                    <span>1968</span>
+
+                    <h3>
+                        O plebiscito
+                    </h3>
+
+                    <p>
+                        Foi realizado um plebiscito para consultar
+                        a população sobre a criação do município.
+                        A grande maioria votou a favor da emancipação.
+                    </p>
+
+                </div>
+
+
+                <div class="historia-item">
+
+                    <span>1977</span>
+
+                    <h3>
+                        Nova Santa Rosa se torna município
+                    </h3>
+
+                    <p>
+                        A instalação oficial do município aconteceu
+                        em 1º de fevereiro de 1977.
+                    </p>
+
+                </div>
+
+
+                <div class="historia-item">
+
+                    <span>2026</span>
+
+                    <h3>
+                        50 anos
+                    </h3>
+
+                    <p>
+                        Nova Santa Rosa celebra 50 anos de
+                        emancipação político-administrativa,
+                        valorizando sua história e olhando para
+                        o futuro.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- GALERIA -->
+
+        <section>
+
+            <div class="titulo">
+
+                <h2>Um pouco da nossa cidade</h2>
+
+                <p>
+                    Nova Santa Rosa em imagens
+                </p>
+
+            </div>
+
+
+            <div class="galeria">
+
+                <img
+                    src="https://novasantarosa.pr.gov.br/wp-content/uploads/2025/02/PREFEITURA-DE-NOVA-SANTA-ROSA.jpg"
+                    alt="Nova Santa Rosa"
+                >
+
+                <img
+                    src="https://novasantarosa.pr.gov.br/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-23-at-20.39.57.jpeg"
+                    alt="Evento em Nova Santa Rosa"
+                >
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CULTURA -->
+
+        <section id="cultura">
+
+            <div class="titulo">
+
+                <h2>Cultura e identidade</h2>
+
+                <p>
+                    O que faz parte da nossa cidade
+                </p>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <div class="icone">🌾</div>
+
+                    <h3>Agricultura</h3>
+
+                    <p>
+                        A agricultura possui grande importância
+                        para a economia e para a história de
+                        Nova Santa Rosa.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icone">🎭</div>
+
+                    <h3>Cultura</h3>
+
+                    <p>
+                        As tradições e os espaços culturais
+                        ajudam a preservar a história e a
+                        identidade do município.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="icone">🤝</div>
+
+                    <h3>Comunidade</h3>
+
+                    <p>
+                        A união das famílias e das comunidades
+                        sempre teve importância na construção
+                        de Nova Santa Rosa.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CURIOSIDADES -->
+
+        <section>
+
+            <div class="curiosidades" id="curiosidades">
+
+                <h2>
+                    Você sabia?
+                </h2>
+
+
+                <div class="lista">
+
+
+                    <div class="curiosidade">
+                        ✦ Quem nasce em Nova Santa Rosa é
+                        chamado de <strong>nova-santa-rosense</strong>.
+                    </div>
+
+
+                    <div class="curiosidade">
+                        ✦ A colonização oficial começou em
+                        <strong>13 de janeiro de 1953</strong>.
+                    </div>
+
+
+                    <div class="curiosidade">
+                        ✦ O município possui os distritos de
+                        <strong>Alto Santa Fé</strong> e
+                        <strong>Planalto do Oeste</strong>.
+                    </div>
+
+
+                    <div class="curiosidade">
+                        ✦ Os rios <strong>Jaguarundi</strong> e
+                        <strong>Guaçu</strong> fazem parte da
+                        hidrografia local.
+                    </div>
+
+
+                    <div class="curiosidade">
+                        ✦ Em 2026, Nova Santa Rosa completou
+                        <strong>50 anos de emancipação</strong>.
+                    </div>
+
+
+                    <div class="curiosidade">
+                        ✦ A cidade possui espaços culturais como
+                        o Teatro Municipal Gustavo Fischer e o
+                        Museu Municipal Dom Severino Kögl.
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FUTURO -->
+
+        <section id="futuro">
+
+            <div class="futuro">
+
+                <h2>
+                    E o futuro?
+                </h2>
+
+                <p>
+                    Nova Santa Rosa continua crescendo e se
+                    desenvolvendo. O futuro do município está
+                    ligado à valorização da educação, da cultura,
+                    da agricultura, do comércio e das pessoas
+                    que vivem aqui.
+                </p>
+
+                <br>
+
+                <p>
+                    Preservar a história e as tradições enquanto
+                    novas oportunidades são criadas é uma forma
+                    de manter viva a identidade da cidade e
+                    preparar Nova Santa Rosa para as próximas
+                    gerações.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FRASE -->
+
+        <section class="frase">
+
+            <p>
+                “Nossa cidade, nossa história,
+                nosso lugar.”
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <h3>
+            Nova Santa Rosa - Paraná
+        </h3>
+
+        <p>
+            Onde vivemos, nossa história e nossas perspectivas futuras.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,2169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Santa Rosa e Alto Santa Fé | Por Milena</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* =====================================
+           CONFIGURAÇÕES GERAIS
+        ===================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f3eee3;
+            color: #3f4a3d;
+            line-height: 1.7;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+
+        /* =====================================
+           MENU
+        ===================================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            background: rgba(255, 255, 255, 0.94);
+            backdrop-filter: blur(10px);
+
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+
+            padding: 17px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-family: 'DM Serif Display', serif;
+            color: #405b3d;
+            font-size: 26px;
+        }
+
+        nav ul {
+            list-style: none;
+
+            display: flex;
+            gap: 23px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4d5749;
+
+            font-size: 14px;
+            font-weight: 500;
+
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a4773c;
+        }
+
+
+        /* =====================================
+           CAPA
+        ===================================== */
+
+        .inicio {
+
+            min-height: 100vh;
+
+            background:
+                linear-gradient(
+                    rgba(40, 60, 35, 0.52),
+                    rgba(40, 60, 35, 0.52)
+                ),
+                url("img/alto-santa-fe.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 120px 20px 60px;
+        }
+
+        .inicio-conteudo {
+            max-width: 900px;
+            color: white;
+        }
+
+        .inicio-conteudo .pequeno {
+
+            font-size: 15px;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+
+            font-weight: 500;
+        }
+
+        .inicio h1 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 75px;
+
+            line-height: 1.08;
+
+            margin: 22px 0;
+        }
+
+        .inicio p {
+
+            max-width: 750px;
+
+            margin: auto;
+
+            font-size: 20px;
+        }
+
+        .autora {
+
+            margin-top: 35px !important;
+
+            font-size: 14px !important;
+
+            text-transform: uppercase;
+
+            letter-spacing: 3px;
+        }
+
+        .nome-autora {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 28px !important;
+
+            margin-top: 3px !important;
+        }
+
+
+        /* =====================================
+           SEÇÕES GERAIS
+        ===================================== */
+
+        section {
+            padding: 95px 20px;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .titulo span {
+
+            color: #a4773c;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+        }
+
+        .titulo h2 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 50px;
+
+            line-height: 1.2;
+
+            color: #405b3d;
+
+            margin-top: 8px;
+        }
+
+
+        /* =====================================
+           NOVA SANTA ROSA
+        ===================================== */
+
+        .municipio {
+            background: #fffaf0;
+        }
+
+        .duas-colunas {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+
+            align-items: center;
+        }
+
+        .texto p {
+            margin-bottom: 18px;
+        }
+
+        .imagem img {
+
+            width: 100%;
+
+            border-radius: 25px;
+
+            display: block;
+
+            box-shadow:
+                0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .legenda {
+
+            text-align: center;
+
+            color: #777;
+
+            font-size: 12px;
+
+            margin-top: 10px;
+        }
+
+
+        /* =====================================
+           ALTO SANTA FÉ
+        ===================================== */
+
+        .alto {
+            background: #e1e9d9;
+        }
+
+        .alto-card {
+
+            background: white;
+
+            border-radius: 25px;
+
+            padding: 50px;
+
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        .alto-card h3 {
+
+            font-family: 'DM Serif Display', serif;
+
+            color: #405b3d;
+
+            font-size: 35px;
+
+            margin-bottom: 20px;
+        }
+
+        .alto-card p {
+            margin-bottom: 18px;
+        }
+
+
+        /* =====================================
+           VIDA NO INTERIOR
+        ===================================== */
+
+        .interior {
+            background: #f3eee3;
+        }
+
+        .interior-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 25px;
+        }
+
+        .interior-card {
+
+            background: white;
+
+            border-radius: 20px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 22px rgba(0, 0, 0, 0.08);
+
+            transition: 0.3s;
+        }
+
+        .interior-card:hover {
+
+            transform: translateY(-6px);
+
+        }
+
+        .interior-card img {
+
+            width: 100%;
+
+            height: 220px;
+
+            object-fit: cover;
+        }
+
+        .interior-card div {
+
+            padding: 25px;
+        }
+
+        .interior-card h3 {
+
+            color: #405b3d;
+
+            margin-bottom: 10px;
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 27px;
+        }
+
+
+        /* =====================================
+           CULTURA ALEMÃ
+        ===================================== */
+
+        .cultura {
+            background: #fffaf0;
+        }
+
+        .cultura-texto {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .cultura-texto p {
+
+            margin-bottom: 18px;
+        }
+
+        .frase {
+
+            margin-top: 35px;
+
+            padding: 30px;
+
+            background: #e7dcc5;
+
+            border-left: 5px solid #a4773c;
+
+            border-radius: 15px;
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 23px;
+
+            color: #5a4a32;
+        }
+
+
+        /* =====================================
+           CLUBE SOCIAL UNIÃO
+        ===================================== */
+
+        .clube {
+
+            background: #405b3d;
+
+            color: white;
+        }
+
+        .clube .titulo h2,
+        .clube .titulo span {
+
+            color: white;
+        }
+
+        .clube-texto h3 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 36px;
+
+            margin-bottom: 18px;
+        }
+
+        .clube-texto p {
+
+            margin-bottom: 18px;
+        }
+
+        .clube img {
+
+            width: 100%;
+
+            border-radius: 25px;
+
+            display: block;
+        }
+
+
+        /* =====================================
+           FRIZ E FRIDA
+        ===================================== */
+
+        .bonecos {
+
+            background: #efe4cf;
+        }
+
+        .bonecos-box {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 50px;
+
+            align-items: center;
+        }
+
+        .bonecos-box h3 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 40px;
+
+            color: #405b3d;
+
+            margin-bottom: 18px;
+        }
+
+        .bonecos-box p {
+
+            margin-bottom: 18px;
+        }
+
+        .bonecos-imagem img {
+
+            width: 100%;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 12px 30px rgba(0,0,0,0.12);
+        }
+
+
+        /* =====================================
+           IGREJA
+        ===================================== */
+
+        .igreja {
+
+            background: #fffaf0;
+
+            text-align: center;
+        }
+
+        .igreja-texto {
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+        .igreja-texto p {
+
+            margin-bottom: 18px;
+        }
+
+        .idade {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 75px;
+
+            color: #a4773c;
+
+            margin: 25px 0;
+        }
+
+        .igreja-imagem {
+
+            max-width: 750px;
+
+            margin: 40px auto 0;
+        }
+
+        .igreja-imagem img {
+
+            width: 100%;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 12px 30px rgba(0,0,0,0.12);
+        }
+
+
+        /* =====================================
+           GRANDE DESTAQUE - OVNI
+        ===================================== */
+
+        .ovni {
+
+            background:
+                radial-gradient(
+                    circle at 50% 0%,
+                    #29433b,
+                    #101916 70%
+                );
+
+            color: white;
+
+            padding: 125px 20px;
+
+            overflow: hidden;
+        }
+
+        .ovni-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+        .ovni-introducao {
+
+            text-align: center;
+
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+        .ovni-tag {
+
+            color: #d6b46a;
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            letter-spacing: 4px;
+
+            text-transform: uppercase;
+        }
+
+        .ovni-introducao h2 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 68px;
+
+            line-height: 1.05;
+
+            margin: 22px 0;
+        }
+
+        .ovni-subtitulo {
+
+            color: #d7dfda;
+
+            font-size: 20px;
+
+            max-width: 780px;
+
+            margin: auto;
+        }
+
+
+        /* IMAGEM PRINCIPAL DO OVNI */
+
+        .ovni-imagem-principal {
+
+            max-width: 1000px;
+
+            margin: 65px auto;
+
+            position: relative;
+        }
+
+        .ovni-imagem-principal img {
+
+            width: 100%;
+
+            height: 520px;
+
+            object-fit: cover;
+
+            border-radius: 28px;
+
+            display: block;
+
+            box-shadow:
+                0 25px 60px rgba(0,0,0,0.5);
+        }
+
+        .imagem-legenda {
+
+            position: absolute;
+
+            bottom: 20px;
+
+            left: 20px;
+
+            right: 20px;
+
+            background: rgba(0,0,0,0.7);
+
+            padding: 15px;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            font-size: 14px;
+        }
+
+
+        /* HISTÓRIA DO OVNI */
+
+        .ovni-historia {
+
+            display: grid;
+
+            grid-template-columns: 1fr 280px;
+
+            gap: 55px;
+
+            align-items: center;
+
+            margin: 80px 0;
+        }
+
+        .ovni-texto h3 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 40px;
+
+            margin-bottom: 22px;
+        }
+
+        .ovni-texto p {
+
+            color: #d7dfda;
+
+            margin-bottom: 18px;
+        }
+
+        .ovni-texto strong {
+
+            color: #e1c477;
+        }
+
+
+        /* CAIXA DE LOCAL */
+
+        .ovni-dado {
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            background: rgba(255,255,255,0.06);
+
+            border:
+                1px solid rgba(255,255,255,0.2);
+        }
+
+        .ovni-dado span {
+
+            display: block;
+
+            color: #d6b46a;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 15px;
+        }
+
+        .ovni-dado strong {
+
+            display: block;
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 28px;
+        }
+
+        .ovni-dado small {
+
+            color: #bfc8c2;
+
+            display: block;
+
+            margin-top: 5px;
+        }
+
+
+        /* LINHA DO TEMPO */
+
+        .ovni-linha-do-tempo {
+
+            margin-top: 90px;
+        }
+
+        .ovni-linha-do-tempo > h3 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 40px;
+
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+
+            border-left:
+                2px solid #a4773c;
+
+            padding-left: 35px;
+        }
+
+        .timeline-item {
+
+            display: grid;
+
+            grid-template-columns: 60px 1fr;
+
+            gap: 20px;
+
+            margin-bottom: 45px;
+        }
+
+        .timeline-numero {
+
+            width: 50px;
+
+            height: 50px;
+
+            border-radius: 50%;
+
+            background: #a4773c;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-weight: bold;
+
+            margin-left: -61px;
+        }
+
+        .timeline-item h4 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 26px;
+
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+
+            color: #c7cfca;
+        }
+
+
+        /* GALERIA DO OVNI */
+
+        .ovni-galeria {
+
+            margin-top: 85px;
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr;
+
+            grid-template-rows: 240px 240px;
+
+            gap: 15px;
+        }
+
+        .galeria-item {
+
+            overflow: hidden;
+
+            border-radius: 18px;
+        }
+
+        .galeria-item.grande {
+
+            grid-row: span 2;
+        }
+
+        .galeria-item img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            transition: 0.5s;
+        }
+
+        .galeria-item:hover img {
+
+            transform: scale(1.05);
+        }
+
+
+        /* MEMÓRIA */
+
+        .ovni-memoria {
+
+            max-width: 850px;
+
+            margin: 80px auto 0;
+
+            padding: 55px;
+
+            text-align: center;
+
+            background: rgba(255,255,255,0.07);
+
+            border:
+                1px solid rgba(255,255,255,0.16);
+
+            border-radius: 25px;
+        }
+
+        .memoria-icon {
+
+            font-size: 55px;
+
+            margin-bottom: 15px;
+        }
+
+        .ovni-memoria h3 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 38px;
+
+            margin-bottom: 20px;
+        }
+
+        .ovni-memoria p {
+
+            color: #d0d7d2;
+
+            margin-bottom: 15px;
+        }
+
+        .ovni-memoria strong {
+
+            display: block;
+
+            color: #e0c27c;
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 24px;
+
+            margin-top: 28px;
+        }
+
+
+        /* =====================================
+           MINHA VISÃO
+        ===================================== */
+
+        .final {
+
+            background: #dfe8d8;
+
+            text-align: center;
+        }
+
+        .final-texto {
+
+            max-width: 850px;
+
+            margin: auto;
+        }
+
+        .final h2 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 50px;
+
+            color: #405b3d;
+
+            margin-bottom: 25px;
+        }
+
+        .final p {
+
+            margin-bottom: 18px;
+
+            font-size: 17px;
+        }
+
+        .assinatura {
+
+            margin-top: 35px;
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 30px;
+
+            color: #a4773c;
+        }
+
+
+        /* =====================================
+           RODAPÉ
+        ===================================== */
+
+        footer {
+
+            background: #2f3d2d;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 40px 20px;
+        }
+
+        footer h3 {
+
+            font-family: 'DM Serif Display', serif;
+
+            font-size: 28px;
+
+            margin-bottom: 8px;
+        }
+
+        footer p {
+
+            color: #d0d7d2;
+
+            font-size: 14px;
+        }
+
+
+        /* =====================================
+           RESPONSIVO
+        ===================================== */
+
+        @media (max-width: 850px) {
+
+            nav {
+
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+            nav ul {
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 12px;
+            }
+
+            .inicio h1 {
+
+                font-size: 50px;
+            }
+
+            .inicio p {
+
+                font-size: 17px;
+            }
+
+            .duas-colunas {
+
+                grid-template-columns: 1fr;
+            }
+
+            .interior-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .bonecos-box {
+
+                grid-template-columns: 1fr;
+            }
+
+            .titulo h2 {
+
+                font-size: 40px;
+            }
+
+            .idade {
+
+                font-size: 55px;
+            }
+
+            .ovni-introducao h2 {
+
+                font-size: 48px;
+            }
+
+            .ovni-subtitulo {
+
+                font-size: 17px;
+            }
+
+            .ovni-imagem-principal img {
+
+                height: 350px;
+            }
+
+            .ovni-historia {
+
+                grid-template-columns: 1fr;
+            }
+
+            .ovni-galeria {
+
+                grid-template-columns: 1fr;
+
+                grid-template-rows:
+                    repeat(3, 250px);
+            }
+
+            .galeria-item.grande {
+
+                grid-row: auto;
+            }
+
+            .ovni-memoria {
+
+                padding: 35px 25px;
+            }
+
+            .alto-card {
+
+                padding: 30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         MENU
+    ===================================== -->
+
+    <header>
+
+        <nav>
+
+            <h2>Minha Região</h2>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#nova-santa-rosa">
+                        Nova Santa Rosa
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#alto">
+                        Alto Santa Fé
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#cultura">
+                        Tradições
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#ovni">
+                        O Mistério
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================
+         CAPA
+    ===================================== -->
+
+    <section class="inicio" id="inicio">
+
+        <div class="inicio-conteudo">
+
+            <span class="pequeno">
+                Minha região • Minha história
+            </span>
+
+            <h1>
+                Nova Santa Rosa
+                <br>
+                & Alto Santa Fé
+            </h1>
+
+            <p>
+                Do município onde começa esta história
+                até a pequena comunidade onde cresci,
+                vivo em um lugar marcado pela agricultura,
+                pelas tradições e pelas histórias de seus moradores.
+            </p>
+
+            <p class="autora">
+                Um olhar sobre o lugar onde vivo
+            </p>
+
+            <p class="nome-autora">
+                Por Milena Rambo
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         NOVA SANTA ROSA
+    ===================================== -->
+
+    <section class="municipio" id="nova-santa-rosa">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>
+                    O município
+                </span>
+
+                <h2>
+                    Nova Santa Rosa
+                </h2>
+
+            </div>
+
+
+            <div class="duas-colunas">
+
+                <div class="texto">
+
+                    <p>
+                        Nova Santa Rosa é o município ao qual
+                        pertence a comunidade onde eu moro.
+                        Localizado no Oeste do Paraná, o município
+                        possui uma forte ligação com a agricultura
+                        e com as comunidades do interior.
+                    </p>
+
+                    <p>
+                        A cidade e suas comunidades são marcadas
+                        pelo trabalho no campo, pela presença de
+                        famílias que vivem da agricultura e pela
+                        preservação de costumes que fazem parte
+                        da história da região.
+                    </p>
+
+                    <p>
+                        Nova Santa Rosa também possui uma forte
+                        influência cultural de famílias de origem
+                        alemã, característica que pode ser percebida
+                        em diferentes tradições e eventos do município.
+                    </p>
+
+                    <p>
+                        Dentro desse município existem diferentes
+                        comunidades e distritos. Entre eles está
+                        <strong>Alto Santa Fé</strong>, que é o lugar
+                        onde minha história começa.
+                    </p>
+
+                </div>
+
+
+                <div class="imagem">
+
+                    <img
+                        src="588512014_122151243932707697_8178939442044740716_n.jpg"
+                        alt="Paisagem de Nova Santa Rosa"
+                    >
+
+                    <p class="legenda">
+                        Nova Santa Rosa — Paraná
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         ALTO SANTA FÉ
+    ===================================== -->
+
+    <section class="alto" id="alto">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>
+                    Onde eu moro
+                </span>
+
+                <h2>
+                    Alto Santa Fé
+                </h2>
+
+            </div>
+
+
+            <div class="alto-card">
+
+                <h3>
+                    Uma pequena comunidade dentro
+                    de Nova Santa Rosa
+                </h3>
+
+                <p>
+                    Alto Santa Fé é um distrito pertencente
+                    ao município de Nova Santa Rosa, no Oeste
+                    do Paraná. É aqui que eu moro e onde
+                    sempre vivi.
+                </p>
+
+                <p>
+                    A comunidade possui muitas áreas rurais
+                    e tem na agricultura uma das principais
+                    atividades de seus moradores. É um lugar
+                    menor e mais tranquilo, onde muitas pessoas
+                    possuem uma relação muito próxima com o
+                    campo.
+                </p>
+
+                <p>
+                    Apesar de ser uma comunidade pequena,
+                    Alto Santa Fé possui lugares, tradições,
+                    festas e histórias próprias que fazem
+                    parte da memória de seus moradores.
+                </p>
+
+                <p>
+                    É justamente essa combinação entre a vida
+                    simples do interior e as histórias curiosas
+                    da comunidade que torna o lugar tão especial
+                    para mim.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         VIDA NO INTERIOR
+    ===================================== -->
+
+    <section class="interior">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>
+                    Meu cotidiano
+                </span>
+
+                <h2>
+                    Vida no Interior
+                </h2>
+
+            </div>
+
+
+            <div class="interior-grid">
+
+
+                <div class="interior-card">
+
+                    <img
+                        src="e4f9c5f36d5c197a05cc4f3c991d6a5c.jpg"
+                        alt="Agricultura no interior de Alto Santa Fé"
+                    >
+
+                    <div>
+
+                        <h3>
+                            Agricultura
+                        </h3>
+
+                        <p>
+                            A agricultura está muito presente
+                            na rotina de Alto Santa Fé. Muitas
+                            famílias trabalham no campo e a
+                            produção agrícola faz parte da
+                            identidade da comunidade.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="interior-card">
+
+                    <img
+                        src="1c4c24fbad31dbd3f28cbe613f79d369.jpg"
+                        alt="Comunidade de Alto Santa Fé"
+                    >
+
+                    <div>
+
+                        <h3>
+                            Comunidade
+                        </h3>
+
+                        <p>
+                            Em uma comunidade pequena, as pessoas
+                            acabam se conhecendo e participando
+                            juntas das festas, encontros e
+                            acontecimentos locais.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="interior-card">
+
+                    <img
+                        src="984197a4e71330de36ae71ccbdeb6057.jpg"
+                        alt="Paisagem rural de Alto Santa Fé"
+                    >
+
+                    <div>
+
+                        <h3>
+                            Tranquilidade
+                        </h3>
+
+                        <p>
+                            Uma das características que mais
+                            representa o lugar onde moro é a
+                            tranquilidade. É um lugar simples,
+                            cercado pela natureza e pela vida
+                            do campo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         TRADIÇÃO ALEMÃ
+    ===================================== -->
+
+    <section class="cultura" id="cultura">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>
+                    Uma parte da identidade local
+                </span>
+
+                <h2>
+                    Tradição Alemã
+                </h2>
+
+            </div>
+
+
+            <div class="cultura-texto">
+
+                <p>
+                    A cultura de origem alemã está muito presente
+                    em Alto Santa Fé. Essa influência aparece
+                    principalmente nas festas, na música, na dança
+                    e nas atividades que reúnem a comunidade.
+                </p>
+
+                <p>
+                    Essas tradições são importantes porque não
+                    representam apenas costumes antigos. Elas
+                    continuam sendo praticadas e transmitidas
+                    entre as diferentes gerações.
+                </p>
+
+                <p>
+                    Durante o ano, o Clube Social União realiza
+                    diferentes eventos e bailes, incluindo festas
+                    relacionadas à tradição germânica.
+                </p>
+
+                <p>
+                    Também existe o grupo de dança alemã, que
+                    participa das atividades da comunidade e
+                    contribui para manter essa cultura presente
+                    entre os moradores.
+                </p>
+
+
+                <div class="frase">
+
+                    As tradições continuam vivas quando
+                    as pessoas continuam contando suas
+                    histórias e participando delas.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         CLUBE SOCIAL UNIÃO
+    ===================================== -->
+
+    <section class="clube">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>
+                    Um dos principais pontos de encontro
+                </span>
+
+                <h2>
+                    Clube Social União
+                </h2>
+
+            </div>
+
+
+            <div class="duas-colunas">
+
+                <div class="clube-texto">
+
+                    <h3>
+                        Festas, bailes e encontros
+                    </h3>
+
+                    <p>
+                        O Clube Social União é um dos lugares
+                        mais importantes para a vida comunitária
+                        de Alto Santa Fé.
+                    </p>
+
+                    <p>
+                        Durante o ano acontecem diferentes festas,
+                        bailes e eventos que reúnem moradores,
+                        famílias e visitantes de outras comunidades.
+                    </p>
+
+                    <p>
+                        Entre as celebrações ligadas à cultura
+                        germânica está o tradicional
+                        <strong>Kerb Fest</strong>, que reúne
+                        música, gastronomia e atividades da
+                        comunidade.
+                    </p>
+
+                    <p>
+                        O clube também ajuda a preservar costumes
+                        e proporciona momentos de encontro entre
+                        diferentes gerações.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <img
+                        src="b4ee10168e16884fe3eb2d02579122b0.jpg"
+                        alt="Clube Social União de Alto Santa Fé"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         FRIZ E FRIDA
+    ===================================== -->
+
+    <section class="bonecos">
+
+        <div class="container">
+
+            <div class="bonecos-box">
+
+                <div>
+
+                    <h3>
+                        Friz e Frida
+                    </h3>
+
+                    <p>
+                        Uma das tradições mais curiosas das
+                        festas da comunidade são os bonecos
+                        temáticos conhecidos como
+                        <strong>Friz e Frida</strong>.
+                    </p>
+
+                    <p>
+                        Eles fazem parte das atividades relacionadas
+                        à cultura alemã e são uma presença marcante
+                        durante as festividades.
+                    </p>
+
+                    <p>
+                        As bonecas também são produzidas para
+                        o tradicional leilão, tornando-se uma
+                        das atrações que chamam a atenção dos
+                        participantes.
+                    </p>
+
+                    <p>
+                        É uma tradição que mostra como a cultura
+                        alemã ganhou características próprias
+                        dentro da comunidade de Alto Santa Fé.
+                    </p>
+
+                </div>
+
+
+                <div class="bonecos-imagem">
+
+                    <img
+                        src="55d32187d8d3d11d4dbf760dad261f94.jpg"
+                        alt="Friz e Frida"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         IGREJA
+    ===================================== -->
+
+    <section class="igreja">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>
+                    Fé e comunidade
+                </span>
+
+                <h2>
+                    Capela Santa Teresinha
+                </h2>
+
+            </div>
+
+
+            <div class="igreja-texto">
+
+                <p>
+                    A Capela Santa Teresinha também ocupa
+                    um lugar importante na história de
+                    Alto Santa Fé.
+                </p>
+
+                <p>
+                    Todos os anos, no mês de julho, acontece
+                    a tradicional festa da igreja, reunindo
+                    moradores e visitantes em um momento
+                    de fé, convivência e confraternização.
+                </p>
+
+
+                <div class="idade">
+                    67 anos
+                </div>
+
+
+                <p>
+                    Em 2026, a comunidade celebra os
+                    <strong>67 anos da igreja</strong>,
+                    marcando mais de seis décadas de história
+                    e participação na vida da comunidade.
+                </p>
+
+                <p>
+                    A igreja representa não apenas um espaço
+                    religioso, mas também uma parte da memória
+                    e da identidade de Alto Santa Fé.
+                </p>
+
+            </div>
+
+
+            <div class="igreja-imagem">
+
+                <img
+                    src="2024-07-20-10-12-34-capela-santa-terezinha-de-alto-santa-fe-2.jpg"
+                    alt="Capela Santa Teresinha de Alto Santa Fé"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         GRANDE DESTAQUE - HISTÓRIA DO OVNI
+    ===================================== -->
+
+    <section class="ovni" id="ovni">
+
+        <div class="ovni-container">
+
+
+            <div class="ovni-introducao">
+
+                <span class="ovni-tag">
+                    Uma história que atravessou gerações
+                </span>
+
+                <h2>
+                    O mistério que caiu
+                    <br>
+                    do céu em Alto Santa Fé
+                </h2>
+
+                <p class="ovni-subtitulo">
+                    Uma das histórias mais curiosas da comunidade:
+                    um equipamento vindo dos Estados Unidos que
+                    caiu na região e durante muito tempo foi
+                    associado pelos moradores a um possível OVNI.
+                </p>
+
+            </div>
+
+
+
+            <!-- IMAGEM PRINCIPAL -->
+
+            <div class="ovni-imagem-principal">
+
+                <img
+                    src="321c05f8-3066-4ab2-bc84-f8fdde6d8412.jpg"
+                    alt="Representação artística da história do equipamento que caiu em Alto Santa Fé"
+                >
+
+                <div class="imagem-legenda">
+                    Representação visual da história que marcou
+                    a memória de Alto Santa Fé.
+                </div>
+
+            </div>
+
+
+
+            <!-- EXPLICAÇÃO -->
+
+            <div class="ovni-historia">
+
+
+                <div class="ovni-texto">
+
+                    <h3>
+                        O que aconteceu?
+                    </h3>
+
+                    <p>
+                        Alto Santa Fé possui uma história bastante
+                        diferente das que normalmente aparecem
+                        quando se fala de uma pequena comunidade
+                        rural.
+                    </p>
+
+                    <p>
+                        Na década de 1980, um equipamento utilizado
+                        em uma experiência científica acabou caindo
+                        em uma área rural da comunidade.
+                    </p>
+
+                    <p>
+                        Como os moradores não tinham muitas
+                        informações sobre o que era aquele objeto,
+                        a história acabou ganhando um caráter
+                        misterioso. Para muitas pessoas, aquilo
+                        parecia ser um <strong>OVNI</strong>.
+                    </p>
+
+                    <p>
+                        Registros posteriores identificaram o
+                        equipamento como relacionado a uma
+                        experiência científica e associado à
+                        <strong>NASA</strong>.
+                    </p>
+
+                    <p>
+                        A explicação científica, porém, não fez
+                        a história desaparecer. Pelo contrário:
+                        o acontecimento continuou sendo contado
+                        pelos moradores e passou a fazer parte
+                        da memória de Alto Santa Fé.
+                    </p>
+
+                </div>
+
+
+
+                <div class="ovni-dado">
+
+                    <span>
+                        📍 LOCAL
+                    </span>
+
+                    <strong>
+                        Alto Santa Fé
+                    </strong>
+
+                    <small>
+                        Nova Santa Rosa — Paraná
+                    </small>
+
+                    <br>
+
+                    <span style="margin-top:25px;">
+                        🔭 ENVOLVIDO
+                    </span>
+
+                    <strong>
+                        Equipamento científico
+                    </strong>
+
+                    <small>
+                        Associado à NASA
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- LINHA DO TEMPO -->
+
+            <div class="ovni-linha-do-tempo">
+
+                <h3>
+                    A história em quatro momentos
+                </h3>
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-numero">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                O objeto aparece
+                            </h4>
+
+                            <p>
+                                Um objeto diferente foi observado
+                                e acabou chegando à região de
+                                Alto Santa Fé.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-numero">
+                            02
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                A queda
+                            </h4>
+
+                            <p>
+                                O equipamento caiu em uma área
+                                rural da comunidade, despertando
+                                a curiosidade dos moradores.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-numero">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                O “OVNI”
+                            </h4>
+
+                            <p>
+                                Sem informações suficientes sobre
+                                a origem do objeto, muitas pessoas
+                                passaram a relacioná-lo a um
+                                possível OVNI.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-numero">
+                            04
+                        </div>
+
+                        <div>
+
+                            <h4>
+                                A explicação científica
+                            </h4>
+
+                            <p>
+                                Registros posteriores relacionaram
+                                o equipamento a uma experiência
+                                científica envolvendo observações
+                                de fenômenos solares.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GALERIA -->
+
+            <div class="ovni-galeria">
+
+
+                <div class="galeria-item grande">
+
+                    <img
+                        src="WhatsApp-Image-2021-11-09-at-10.09.36-1-1.webp"
+                        alt="Registro histórico relacionado ao caso"
+                    >
+
+                </div>
+
+
+                <div class="galeria-item">
+
+                    <img
+                        src="WhatsApp-Image-2021-11-09-at-10.09.36-3-1.webp"
+                        alt="Material relacionado à história"
+                    >
+
+                </div>
+
+
+                <div class="galeria-item">
+
+                    <img
+                        src="WhatsApp-Image-2021-11-09-at-10.09.35-2-1.webp"
+                        alt="Alto Santa Fé e a história do objeto"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- MEMÓRIA DOS MORADORES -->
+
+            <div class="ovni-memoria">
+
+                <div class="memoria-icon">
+                    👽
+                </div>
+
+                <h3>
+                    O mistério acabou?
+                </h3>
+
+                <p>
+                    A explicação científica ajudou a esclarecer
+                    a origem do equipamento, mas não apagou
+                    a história que ficou na comunidade.
+                </p>
+
+                <p>
+                    Até hoje existem moradores que guardam
+                    lembranças relacionadas ao acontecimento,
+                    incluindo materiais e relatos que foram
+                    associados ao objeto.
+                </p>
+
+                <p>
+                    Essas lembranças mostram como um acontecimento
+                    pode ganhar um significado próprio para
+                    uma comunidade pequena.
+                </p>
+
+                <strong>
+                    O objeto pode ter uma explicação.
+                    <br>
+                    A história, porém, continua.
+                </strong>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         MINHA VISÃO
+    ===================================== -->
+
+    <section class="final">
+
+        <div class="container">
+
+            <div class="final-texto">
+
+                <h2>
+                    O lugar que eu chamo de casa
+                </h2>
+
+                <p>
+                    Para quem não conhece, Alto Santa Fé pode
+                    parecer apenas uma pequena comunidade rural
+                    pertencente a Nova Santa Rosa.
+                </p>
+
+                <p>
+                    Para mim, porém, é muito mais do que isso.
+                    É o lugar onde cresci, onde sempre vivi e
+                    onde continuo morando atualmente.
+                </p>
+
+                <p>
+                    Eu moro no interior de Alto Santa Fé,
+                    em um sítio, por isso a agricultura,
+                    a natureza e a rotina do campo fazem
+                    parte da minha vida.
+                </p>
+
+                <p>
+                    É uma comunidade simples e tranquila,
+                    mas que possui suas próprias festas,
+                    tradições, histórias e pessoas que fazem
+                    dela um lugar especial.
+                </p>
+
+                <p>
+                    Entre a cultura alemã, as festas do clube,
+                    a celebração da igreja, a vida no campo
+                    e até mesmo a curiosa história do objeto
+                    que caiu do céu, Alto Santa Fé guarda
+                    muito mais histórias do que seu tamanho
+                    poderia fazer parecer.
+                </p>
+
+                <p>
+                    Por isso, falar sobre esse lugar também
+                    é falar um pouco sobre quem eu sou.
+                </p>
+
+                <div class="assinatura">
+                    Milena
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         RODAPÉ
+    ===================================== -->
+
+    <footer>
+
+        <h3>
+            Nova Santa Rosa & Alto Santa Fé
+        </h3>
+
+        <p>
+            Um pouco da região que faz parte da minha história.
+        </p>
+
+        <p style="margin-top: 8px;">
+            Projeto Integrador • Milena
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

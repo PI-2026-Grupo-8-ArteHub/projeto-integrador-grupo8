@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Toledo - Paraná</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef4ee;
+            color: #3f4d42;
+            line-height: 1.7;
+        }
+
+        /* MENU */
+
+        header {
+            background-color: #315c45;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            padding: 18px 30px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: white;
+            font-size: 24px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d8c47a;
+        }
+
+
+        /* CAPA */
+
+        .inicio {
+            min-height: 100vh;
+
+            background: linear-gradient(
+                rgba(49, 92, 69, 0.85),
+                rgba(49, 92, 69, 0.85)
+            );
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 100px 20px 50px;
+
+            color: white;
+        }
+
+        .inicio-conteudo {
+            max-width: 850px;
+        }
+
+        .inicio small {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #d8c47a;
+            font-weight: bold;
+        }
+
+        .inicio h1 {
+            font-size: 75px;
+            margin: 20px 0 10px;
+        }
+
+        .inicio h3 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .inicio p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+
+        /* SEÇÕES */
+
+        section {
+            padding: 90px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .titulo span {
+            color: #a47b32;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .titulo h2 {
+            color: #315c45;
+            font-size: 45px;
+            margin-top: 8px;
+        }
+
+
+        /* SOBRE TOLEDO */
+
+        .sobre {
+            background-color: #ffffff;
+        }
+
+        .texto {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .texto p {
+            margin-bottom: 18px;
+            font-size: 17px;
+        }
+
+
+        /* INFORMAÇÕES */
+
+        .informacoes {
+            background-color: #dfeade;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+
+            box-shadow: 0 7px 18px rgba(0,0,0,0.08);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card .icone {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #315c45;
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+
+
+        /* HISTÓRIA */
+
+        .historia {
+            background-color: #ffffff;
+        }
+
+        .historia-box {
+            background-color: #f1f5ef;
+            padding: 40px;
+            border-left: 6px solid #a47b32;
+            border-radius: 12px;
+        }
+
+        .historia-box h3 {
+            color: #315c45;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .historia-box p {
+            margin-bottom: 18px;
+        }
+
+
+        /* AGRICULTURA */
+
+        .agricultura {
+            background-color: #315c45;
+            color: white;
+        }
+
+        .agricultura .titulo h2,
+        .agricultura .titulo span {
+            color: white;
+        }
+
+        .agricultura-conteudo {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .agricultura-conteudo p {
+            margin-bottom: 18px;
+            font-size: 17px;
+        }
+
+        .destaque {
+            margin-top: 35px;
+            padding: 30px;
+            background-color: rgba(255,255,255,0.10);
+            border-radius: 18px;
+        }
+
+        .destaque strong {
+            color: #d8c47a;
+            font-size: 22px;
+        }
+
+
+        /* CULTURA */
+
+        .cultura {
+            background-color: #f7f2e7;
+        }
+
+        .cultura-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .cultura-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+        }
+
+        .cultura-card h3 {
+            color: #315c45;
+            font-size: 26px;
+            margin-bottom: 12px;
+        }
+
+
+        /* PONTOS */
+
+        .lugares {
+            background-color: #ffffff;
+        }
+
+        .lugares-lista {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .lugar {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+
+            padding: 25px;
+            margin-bottom: 18px;
+
+            background-color: #eef4ee;
+            border-radius: 15px;
+        }
+
+        .numero {
+            min-width: 45px;
+            height: 45px;
+
+            background-color: #315c45;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-weight: bold;
+        }
+
+        .lugar h3 {
+            color: #315c45;
+            margin-bottom: 5px;
+        }
+
+
+        /* TOLEDO HOJE */
+
+        .hoje {
+            background-color: #dfeade;
+        }
+
+        .hoje-texto {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .hoje-texto p {
+            margin-bottom: 18px;
+            font-size: 17px;
+        }
+
+
+        /* CONCLUSÃO */
+
+        .conclusao {
+            background-color: #f7f2e7;
+            text-align: center;
+        }
+
+        .conclusao-texto {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .conclusao h2 {
+            color: #315c45;
+            font-size: 45px;
+            margin-bottom: 25px;
+        }
+
+        .assinatura {
+            margin-top: 30px;
+            color: #a47b32;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #243c2f;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer h3 {
+            margin-bottom: 8px;
+        }
+
+        footer p {
+            color: #d5ddd7;
+            font-size: 14px;
+        }
+
+
+        /* CELULAR */
+
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .inicio h1 {
+                font-size: 52px;
+            }
+
+            .inicio h3 {
+                font-size: 23px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .cultura-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .titulo h2 {
+                font-size: 38px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- MENU -->
+
+    <header>
+
+        <nav>
+
+            <h2>Toledo - PR</h2>
+
+            <ul>
+
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="#historia">História</a>
+                </li>
+
+                <li>
+                    <a href="#agricultura">Agricultura</a>
+                </li>
+
+                <li>
+                    <a href="#cultura">Cultura</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- CAPA -->
+
+    <section class="inicio" id="inicio">
+
+        <div class="inicio-conteudo">
+
+            <small>Oeste do Paraná</small>
+
+            <h1>Toledo</h1>
+
+            <h3>Uma cidade de trabalho, cultura e desenvolvimento</h3>
+
+            <p>
+                Conheça um pouco da história, das características,
+                da agricultura, da cultura e dos lugares que fazem
+                parte da identidade de Toledo, no Paraná.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SOBRE -->
+
+    <section class="sobre" id="sobre">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>Conhecendo a cidade</span>
+
+                <h2>Sobre Toledo</h2>
+
+            </div>
+
+
+            <div class="texto">
+
+                <p>
+                    Toledo é um município localizado na região Oeste
+                    do estado do Paraná. A cidade faz parte de uma
+                    região conhecida pela sua forte atividade
+                    agropecuária e pelo desenvolvimento de suas
+                    cidades.
+                </p>
+
+                <p>
+                    O município possui uma área urbana desenvolvida,
+                    mas também possui uma importante área rural.
+                    A agricultura e a produção de alimentos possuem
+                    grande importância para a economia local.
+                </p>
+
+                <p>
+                    Toledo também se destaca pela organização de
+                    seus espaços públicos, pelas áreas verdes,
+                    pelas atividades culturais e pelos eventos
+                    realizados ao longo do ano.
+                </p>
+
+                <p>
+                    A cidade reúne características de um município
+                    moderno e, ao mesmo tempo, mantém uma forte
+                    ligação com o campo e com as famílias que
+                    ajudaram a construir sua história.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- INFORMAÇÕES -->
+
+    <section class="informacoes">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>Algumas características</span>
+
+                <h2>Toledo em destaque</h2>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <div class="icone">🌱</div>
+
+                    <h3>Agricultura</h3>
+
+                    <p>
+                        A produção agrícola e a criação de animais
+                        possuem grande importância para o município.
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="icone">🏙️</div>
+
+                    <h3>Desenvolvimento</h3>
+
+                    <p>
+                        Toledo possui uma estrutura urbana que
+                        atende moradores de diferentes regiões
+                        do município.
+                    </p>
+
+                </div>
+
+
+
+                <div class="card">
+
+                    <div class="icone">🌳</div>
+
+                    <h3>Áreas verdes</h3>
+
+                    <p>
+                        A cidade possui espaços de lazer e áreas
+                        verdes que fazem parte do cotidiano dos
+                        moradores.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- HISTÓRIA -->
+
+    <section class="historia" id="historia">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>De onde a cidade veio</span>
+
+                <h2>História de Toledo</h2>
+
+            </div>
+
+
+            <div class="historia-box">
+
+                <h3>O crescimento do município</h3>
+
+                <p>
+                    A história de Toledo está ligada ao processo
+                    de ocupação e desenvolvimento da região Oeste
+                    do Paraná.
+                </p>
+
+                <p>
+                    A chegada de famílias de diferentes regiões
+                    contribuiu para o crescimento da comunidade e
+                    para o desenvolvimento das atividades agrícolas.
+                </p>
+
+                <p>
+                    Com o passar dos anos, Toledo cresceu e passou
+                    por diversas transformações. A pequena comunidade
+                    se tornou um município importante para a região,
+                    com atividades econômicas, educacionais,
+                    culturais e comerciais cada vez mais variadas.
+                </p>
+
+                <p>
+                    Mesmo com esse crescimento, a relação com a
+                    agricultura continua sendo uma característica
+                    importante da identidade do município.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- AGRICULTURA -->
+
+    <section class="agricultura" id="agricultura">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>Uma das bases do município</span>
+
+                <h2>Agricultura e produção</h2>
+
+            </div>
+
+
+            <div class="agricultura-conteudo">
+
+                <p>
+                    A agricultura possui um papel muito importante
+                    na economia e na identidade de Toledo.
+                </p>
+
+                <p>
+                    As áreas rurais do município produzem diferentes
+                    tipos de alimentos e também existe uma forte
+                    atividade relacionada à criação de animais.
+                </p>
+
+                <p>
+                    A produção agropecuária contribui para movimentar
+                    o comércio e outros setores da cidade, criando
+                    uma relação muito próxima entre o campo e a
+                    área urbana.
+                </p>
+
+
+                <div class="destaque">
+
+                    <strong>
+                        Campo e cidade trabalhando juntos
+                    </strong>
+
+                    <p>
+                        Uma das características de Toledo é justamente
+                        essa ligação entre a produção rural e o
+                        desenvolvimento da área urbana.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CULTURA -->
+
+    <section class="cultura" id="cultura">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>Identidade e tradição</span>
+
+                <h2>Cultura de Toledo</h2>
+
+            </div>
+
+
+            <div class="cultura-grid">
+
+
+                <div class="cultura-card">
+
+                    <h3>Tradições</h3>
+
+                    <p>
+                        A cultura de Toledo foi formada pela presença
+                        de pessoas de diferentes origens e pelas
+                        tradições trazidas pelas famílias que
+                        participaram da formação da região.
+                    </p>
+
+                </div>
+
+
+
+                <div class="cultura-card">
+
+                    <h3>Eventos</h3>
+
+                    <p>
+                        Durante o ano, o município recebe diferentes
+                        eventos, festas e atividades que ajudam a
+                        reunir moradores e visitantes.
+                    </p>
+
+                </div>
+
+
+
+                <div class="cultura-card">
+
+                    <h3>Gastronomia</h3>
+
+                    <p>
+                        A produção agrícola e a diversidade cultural
+                        também influenciam a gastronomia e os eventos
+                        relacionados à comida realizados na região.
+                    </p>
+
+                </div>
+
+
+
+                <div class="cultura-card">
+
+                    <h3>Comunidade</h3>
+
+                    <p>
+                        As atividades culturais e comunitárias
+                        ajudam a fortalecer a convivência entre
+                        as pessoas e a preservar histórias locais.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- LUGARES -->
+
+    <section class="lugares">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>Conhecendo a cidade</span>
+
+                <h2>Lugares e espaços importantes</h2>
+
+            </div>
+
+
+            <div class="lugares-lista">
+
+
+                <div class="lugar">
+
+                    <div class="numero">1</div>
+
+                    <div>
+
+                        <h3>Parque Ecológico Diva Paim Barth</h3>
+
+                        <p>
+                            Um dos espaços de lazer e convivência
+                            conhecidos de Toledo, com áreas verdes
+                            e locais utilizados pela população.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="lugar">
+
+                    <div class="numero">2</div>
+
+                    <div>
+
+                        <h3>Lago Municipal</h3>
+
+                        <p>
+                            Uma área bastante conhecida da cidade,
+                            utilizada para passeios, atividades
+                            físicas e momentos de lazer.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="lugar">
+
+                    <div class="numero">3</div>
+
+                    <div>
+
+                        <h3>Centro da cidade</h3>
+
+                        <p>
+                            A região central concentra comércio,
+                            serviços e diferentes atividades que
+                            fazem parte do cotidiano dos moradores.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="lugar">
+
+                    <div class="numero">4</div>
+
+                    <div>
+
+                        <h3>Espaços culturais</h3>
+
+                        <p>
+                            Toledo possui espaços destinados a
+                            atividades culturais, apresentações
+                            e eventos da comunidade.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TOLEDO HOJE -->
+
+    <section class="hoje">
+
+        <div class="container">
+
+            <div class="titulo">
+
+                <span>Atualidade</span>
+
+                <h2>Toledo nos dias de hoje</h2>
+
+            </div>
+
+
+            <div class="hoje-texto">
+
+                <p>
+                    Atualmente, Toledo é uma das cidades de destaque
+                    da região Oeste do Paraná.
+                </p>
+
+                <p>
+                    O município combina atividades agrícolas,
+                    comércio, indústria, educação e serviços,
+                    formando uma economia diversificada.
+                </p>
+
+                <p>
+                    O crescimento da cidade também trouxe novas
+                    oportunidades e transformou a paisagem urbana,
+                    mas a agricultura continua tendo um papel
+                    fundamental.
+                </p>
+
+                <p>
+                    Essa mistura entre desenvolvimento urbano,
+                    áreas rurais e diferentes tradições ajuda a
+                    formar a identidade de Toledo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONCLUSÃO -->
+
+    <section class="conclusao">
+
+        <div class="container">
+
+            <div class="conclusao-texto">
+
+                <h2>
+                    Toledo: uma cidade em movimento
+                </h2>
+
+                <p>
+                    Toledo é um município que conseguiu crescer
+                    mantendo uma relação importante com suas
+                    origens e com a agricultura.
+                </p>
+
+                <p>
+                    Sua história foi construída pelo trabalho de
+                    muitas famílias e pelas diferentes culturas
+                    que chegaram à região ao longo dos anos.
+                </p>
+
+                <p>
+                    Conhecer Toledo é perceber como uma cidade
+                    pode unir o desenvolvimento, a natureza,
+                    a agricultura, a cultura e a vida em comunidade.
+                </p>
+
+                <div class="assinatura">
+                    Toledo — Paraná
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <h3>Toledo - Paraná</h3>
+
+        <p>
+            História, cultura, agricultura e desenvolvimento.
+        </p>
+
+        <p style="margin-top: 8px;">
+            Projeto escolar - Yasmin Reis
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
